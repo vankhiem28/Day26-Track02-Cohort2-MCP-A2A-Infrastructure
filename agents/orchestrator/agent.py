@@ -96,7 +96,7 @@ mcp_tools = McpToolset(
         ),
         timeout=10,
     ),
-    tool_filter=_allowed_mcp_tools,
+    tool_filter=list(_allowed_mcp_tools) + ["count_words"],
 )
 
 root_agent = Agent(
