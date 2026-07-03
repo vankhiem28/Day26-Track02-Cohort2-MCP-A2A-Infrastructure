@@ -64,7 +64,7 @@ def synthesize_report(findings: str, audience: str = "technical") -> dict:
 
 root_agent = Agent(
     name="synthesis_agent",
-    model="gemini-2.5-flash",
+    model="gemini-2.5-flash-lite",
     description="Tổng hợp kết quả nghiên cứu thành báo cáo cuối có cấu trúc.",
     instruction=(
         "Bạn là chuyên gia tổng hợp báo cáo nghiên cứu. "

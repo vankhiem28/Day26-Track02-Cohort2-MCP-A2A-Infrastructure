@@ -56,7 +56,7 @@ def run_sql_query(sql: str) -> dict:
 
 root_agent = Agent(
     name="database_agent",
-    model="gemini-2.5-flash",
+    model="gemini-2.5-flash-lite",
     description="Truy vấn database chỉ đọc và trả về metrics có cấu trúc.",
     instruction=(
         "Bạn là chuyên gia database. Chỉ chạy truy vấn SELECT qua run_sql_query. "

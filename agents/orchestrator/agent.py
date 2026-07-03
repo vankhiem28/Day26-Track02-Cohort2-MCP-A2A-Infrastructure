@@ -101,7 +101,7 @@ mcp_tools = McpToolset(
 
 root_agent = Agent(
     name="orchestrator",
-    model="gemini-2.5-flash",
+    model="gemini-2.5-flash-lite",
     description="Điều phối nghiên cứu bằng cách ủy quyền cho search, database và synthesis specialist.",
     generate_content_config=types.GenerateContentConfig(
         thinking_config=types.ThinkingConfig(thinking_budget=0),
